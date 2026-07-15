@@ -1,0 +1,35 @@
+Dataset Description
+
+This dataset was collected using a risky decision-making task with intermittent mood ratings. Participants repeatedly chose between certain and risky options and reported their momentary emotional states during the task.
+
+Group coding:
+  1  = participants with suicidal thoughts and behaviors (STB)
+  0  = psychiatric patient controls without STB
+ -1  = healthy controls
+
+Choice modeling:
+The variable “fit_choice” contains parameters and model-fitting results from the following choice models:
+  1. Expected Value (EV) model
+  2. Prospect Theory (PT) model
+  3. Approach–Avoidance Prospect Theory model
+
+Mood modeling:
+The variable “fit_mood” contains parameters and model-fitting results from the following computational mood models:
+  1. CR–EV–RPE
+  2. CR–EV–RPE–3γ
+  3. CR–GR
+  4. CR–GR–2γ
+  5. CR–GRbetter–GRworse
+  6. CR–GRbetter–GRworse–3γ
+  7. CR
+  8. GR
+
+Abbreviations:
+  STB = suicidal thoughts and behaviors
+  CR  = certain reward
+  EV  = expected value
+  RPE = reward prediction error
+  GR  = gamble-related reward or outcome
+  γ   = temporal decay parameter
+
+The models with multiple γ parameters allow different predictors to have separate temporal decay rates. The GRbetter and GRworse terms distinguish gambling outcomes that are better or worse, respectively, according to the definitions implemented in the model-fitting scripts.
